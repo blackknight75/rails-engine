@@ -13,4 +13,12 @@ require 'rails_helper'
       expect(merchants.count).to eq(5)
       expect(merchants.first).to have_key(:name)
     end
+
+    it 'returns single merchant' do
+      merchant = create(:merchant)
+
+      get "/api/v1/merchants/#{merchant.id}"
+
+      expect(response).to be_success
+    end
   end

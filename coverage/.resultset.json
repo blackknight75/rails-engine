@@ -16,6 +16,10 @@
         1,
         1,
         null,
+        null,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/application_controller.rb": [
@@ -45,6 +49,6 @@
         0
       ]
     },
-    "timestamp": 1489437656
+    "timestamp": 1489438087
   }
 }
