@@ -48,7 +48,7 @@ require 'rails_helper'
       expect(merchant_attrs["name"]).to eq(Merchant.last.name)
     end
 
-    it 'find merchant by created_date' do
+    it 'find a single merchant by created_date' do
       merchants = create_list(:merchant, 2)
 
       get "/api/v1/merchants/find?created_at=#{merchants.last.created_at}"
@@ -58,5 +58,29 @@ require 'rails_helper'
       db_merchant = Merchant.last
       expect(response).to be_success
       expect(parsed_merchant_date.strftime("%D")).to eq(db_merchant.created_at.strftime("%D"))
+    end
+
+    it 'find all merchants by name' do
+      merchants = create_list(:merchant, 5)
+
+      get "/api/v1/merchants/find_all?name=#{merchants.first.name}"
+
+      merchants = JSON.parse(response.body)
+
+      expect(response).to be_success
+      expect(merchants).to be_a(Array)
+      expect(merchants.first["name"]).to eq(merchants.last["name"])
+    end
+
+    it 'find all merchants by created date' do
+      merchants = create_list(:merchant, 5)
+
+      get "/api/v1/merchants/find_all?created_at=#{merchants.first.created_at}"
+
+      merchants = JSON.parse(response.body)
+
+      expect(response).to be_success
+      expect(merchants).to be_a(Array)
+      expect(merchants.first["created_at"]).to eq(merchants.last["created_at"])
     end
   end
