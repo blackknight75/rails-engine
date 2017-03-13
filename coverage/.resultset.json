@@ -26,6 +26,20 @@
         1,
         null
       ],
+      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/merchants/search_controller.rb": [
+        1,
+        null,
+        1,
+        3,
+        null,
+        null,
+        1,
+        null,
+        1,
+        3,
+        null,
+        null
+      ],
       "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/channels/application_cable/channel.rb": [
         0,
         0,
@@ -49,6 +63,6 @@
         0
       ]
     },
-    "timestamp": 1489438437
+    "timestamp": 1489447236
   }
 }
