@@ -7,5 +7,10 @@ require 'rails_helper'
       get '/api/v1/merchants'
 
       expect(response).to be_success
+
+      merchants = JSON.parse(response.body, symbolize_names: true)
+
+      expect(merchants.count).to eq(5)
+      expect(merchants.first).to have_key(:name)
     end
   end
