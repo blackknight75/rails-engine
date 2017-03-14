@@ -4,6 +4,24 @@
       "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/models/invoice_item.rb": [
         1,
         1,
+        null,
+        1,
+        1,
+        0,
+        0,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        0,
+        0,
+        null,
+        1,
+        null,
+        null,
         null
       ],
       "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/models/application_record.rb": [
@@ -101,6 +119,10 @@
       "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/serializers/invoice_item_serializer.rb": [
         1,
         1,
+        null,
+        1,
+        9,
+        null,
         null
       ],
       "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/invoice_items/random_controller.rb": [
@@ -123,7 +145,6 @@
         1,
         null,
         1,
-        2,
         2,
         null,
         null
@@ -310,17 +331,8 @@
         0,
         0,
         0
-      ],
-      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/serializers/revenue_serializer.rb": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
       ]
     },
-    "timestamp": 1489522204
+    "timestamp": 1489523150
   }
 }
