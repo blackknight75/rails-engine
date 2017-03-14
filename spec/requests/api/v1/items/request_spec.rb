@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe "items", type: :request do
+describe "Items", type: :request do
   it "returns all items" do
     create_list(:item, 10)
 
