@@ -43,17 +43,18 @@ describe "Items", type: :request do
   end
 
   it "returns all items based on unit_price" do
-    items  = create_list(:item, 2)
-    item0  = create(:item, unit_price: 12)
-    item1  = create(:item, unit_price: 12)
-    get "/api/v1/items/find_all?unit_price=12"
+    items  = create_list(:item, 2, unit_price: 4)
+    item0  = create(:item, unit_price: 1)
+    item1  = create(:item, unit_price: 1)
+
+    get "/api/v1/items/find_all?unit_price=0.01"
 
     expect(response).to be_success
 
     items_with_matching_unit_price = JSON.parse(response.body, symbolize_names: true)
 
     expect(items_with_matching_unit_price.count).to eq 2
-    expect(items_with_matching_unit_price.first).to have_value(12)
+    expect(items_with_matching_unit_price.first[:unit_price]).to eq("0.01")
   end
 
   it "returns a single item based on description" do
