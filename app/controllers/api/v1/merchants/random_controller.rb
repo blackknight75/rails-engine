@@ -1,6 +1,6 @@
 class Api::V1::Merchants::RandomController <ApplicationController
 
   def show
-    render json: Merchant.all.sample
+    render json: random_record(Merchant.all)
   end
 end
