@@ -41,6 +41,24 @@
       "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/models/item.rb": [
         1,
         1,
+        null,
+        1,
+        1,
+        0,
+        0,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        0,
+        null,
+        null,
         null
       ],
       "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/models/merchant.rb": [
@@ -203,6 +221,10 @@
       "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/serializers/item_serializer.rb": [
         1,
         1,
+        null,
+        1,
+        8,
+        null,
         null
       ],
       "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/items/random_controller.rb": [
@@ -333,6 +355,6 @@
         0
       ]
     },
-    "timestamp": 1489523150
+    "timestamp": 1489526075
   }
 }
