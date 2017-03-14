@@ -35,7 +35,7 @@ describe "invoices", type: :request do
     create_list(:invoice, 2)
     create(:invoice, status: "pending")
 
-    get "/api/v1/invoices/find?status=shipped"
+    get "/api/v1/invoices/find_all?status=shipped"
 
     expect(response).to be_success
 
@@ -55,8 +55,8 @@ describe "invoices", type: :request do
 
     invoices = JSON.parse(response.body)
 
-    expect(invoices.count).to eq 1
-    expect(invoices.first).to have_value("shipped")
+    expect(invoices.count).to eq 4
+    expect(invoices).to have_value("shipped")
   end
 
   it "returns a random invoice" do
