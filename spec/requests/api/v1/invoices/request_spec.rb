@@ -25,7 +25,7 @@ describe "invoices", type: :request do
 
     invoice_attrs = JSON.parse(response.body, symbolize_names: true)
 
-    expect(invoice_attrs.count).to eq 6
+    expect(invoice_attrs.count).to eq 4
     expect(invoice_attrs).to have_key(:status)
     expect(invoice_attrs).to have_key(:merchant_id)
     expect(invoice_attrs).to have_key(:customer_id)
@@ -68,7 +68,7 @@ describe "invoices", type: :request do
 
     random_invoice_attrs = JSON.parse(response.body, symbolize_names: true)
 
-    expect(random_invoice_attrs.count).to eq 6
+    expect(random_invoice_attrs.count).to eq 4
     expect(random_invoice_attrs).to have_key(:status)
   end
 end
