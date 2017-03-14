@@ -58,4 +58,17 @@ describe "invoices", type: :request do
     expect(invoices.count).to eq 1
     expect(invoices.first).to have_value("shipped")
   end
+
+  it "returns a random invoice" do
+    create_list(:invoice, 10)
+
+    get "/api/v1/invoices/random"
+
+    expect(response).to be_success
+
+    random_invoice_attrs = JSON.parse(response.body, symbolize_names: true)
+
+    expect(random_invoice_attrs.count).to eq 6
+    expect(random_invoice_attrs).to have_key(:status)
+  end
 end
