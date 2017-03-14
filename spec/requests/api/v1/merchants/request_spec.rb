@@ -73,7 +73,7 @@ require 'rails_helper'
     end
 
     it 'find all merchants by created date' do
-      merchants = create_list(:merchant, 5)
+      merchants = create_list(:merchant, 3)
 
       get "/api/v1/merchants/find_all?created_at=#{merchants.first.created_at}"
 
@@ -82,5 +82,18 @@ require 'rails_helper'
       expect(response).to be_success
       expect(merchants).to be_a(Array)
       expect(merchants.first["created_at"]).to eq(merchants.last["created_at"])
+    end
+
+    it 'returns a single random merchant' do
+      merchants = create_list(:merchant, 3)
+
+      get "/api/v1/merchants/random"
+
+      merchant = JSON.parse(response.body)
+
+      expect(response).to be_success
+      expect(merchant["id"]).to be_a(Integer)
+      expect(merchant["name"]).to be_a(String)
+      expect(merchant["created_at"]).to be_a(String)
     end
   end
