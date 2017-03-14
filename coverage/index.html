@@ -14,26 +14,26 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-03-13T20:32:27-06:00">2017-03-13T20:32:27-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-03-13T20:46:34-06:00">2017-03-13T20:46:34-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">75.81%</span></span>
+    (<span class="covered_percent"><span class="red">76.56%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.82
+         0.83
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>16</b> files in total.
-    <b>62</b> relevant lines. 
-    <span class="green"><b>47</b> lines covered</span> and
+    <b>17</b> files in total.
+    <b>64</b> relevant lines. 
+    <span class="green"><b>49</b> lines covered</span> and
     <span class="red"><b>15</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -182,6 +182,16 @@
       
       <tr>
         <td class="strong"><a href="#254706e40c738d2cef436f28b49981070bbd6f4b" class="src_link" title="app/models/invoice.rb">app/models/invoice.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>3</td>
+        <td>2</td>
+        <td>2</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#6859806dd0396d266b84244a096bbc9af13ed2be" class="src_link" title="app/models/invoice_item.rb">app/models/invoice_item.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>3</td>
         <td>2</td>
@@ -340,15 +350,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.12
+         1.1
        </span>
     </span> hits/line)
   </h2>
   <a name="Models"></a>
   <div>
-    <b>4</b> files in total.
-    <b>10</b> relevant lines. 
-    <span class="green"><b>10</b> lines covered</span> and
+    <b>5</b> files in total.
+    <b>12</b> relevant lines. 
+    <span class="green"><b>12</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -377,6 +387,16 @@
       
       <tr>
         <td class="strong"><a href="#254706e40c738d2cef436f28b49981070bbd6f4b" class="src_link" title="app/models/invoice.rb">app/models/invoice.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>3</td>
+        <td>2</td>
+        <td>2</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#6859806dd0396d266b84244a096bbc9af13ed2be" class="src_link" title="app/models/invoice_item.rb">app/models/invoice_item.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>3</td>
         <td>2</td>
@@ -1443,6 +1463,42 @@
           <span class="hits">1</span>
           
           <code class="ruby">  validates :customer_id, :merchant_id, :status, presence: true </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="6859806dd0396d266b84244a096bbc9af13ed2be">
+  <div class="header">
+    <h3>app/models/invoice_item.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>2</b> relevant lines. 
+      <span class="green"><b>2</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class InvoiceItem &lt; ApplicationRecord</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  validates :unit_price, :invoice_id, :item_id, :quantity, presence: true </code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="3">

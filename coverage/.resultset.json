@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/models/invoice.rb": [
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/models/invoice_item.rb": [
         1,
         1,
         null
@@ -13,6 +13,11 @@
         1,
         2,
         null,
+        null
+      ],
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/models/invoice.rb": [
+        1,
+        1,
         null
       ],
       "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/models/item.rb": [
@@ -133,6 +138,6 @@
         0
       ]
     },
-    "timestamp": 1489458747
+    "timestamp": 1489459594
   }
 }
