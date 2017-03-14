@@ -1,12 +1,12 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/models/invoice_item.rb": [
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/models/invoice_item.rb": [
         1,
         1,
         null
       ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/models/application_record.rb": [
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/models/application_record.rb": [
         1,
         1,
         null,
@@ -15,32 +15,27 @@
         null,
         null
       ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/models/invoice.rb": [
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/models/invoice.rb": [
         1,
         1,
         null
       ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/models/item.rb": [
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/models/item.rb": [
         1,
         1,
         null
       ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/models/merchant.rb": [
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/models/merchant.rb": [
         1,
         1,
         null
       ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/models/customer.rb": [
-        1,
-        1,
-        null
-      ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/models/transaction.rb": [
+
         1,
         null,
         null
       ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/customers_controller.rb": [
+
         1,
         null,
         1,
@@ -52,55 +47,18 @@
         null,
         null
       ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/application_controller.rb": [
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/application_controller.rb": [
         1,
         null
       ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/customers/search_controller.rb": [
-        1,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        null,
-        1,
-        2,
-        null,
-        null
-      ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/customers/random_controller.rb": [
-        1,
-        null,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/invoice_items_controller.rb": [
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/invoice_items/random_controller.rb": [
+
         1,
         1,
         1,
         null,
         null
       ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/invoice_items/search_controller.rb": [
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/invoice_items/search_controller.rb": [
         1,
         1,
         1,
@@ -117,7 +75,7 @@
         null,
         null
       ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/invoices_controller.rb": [
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/invoices_controller.rb": [
         1,
         1,
         1,
@@ -128,7 +86,7 @@
         null,
         null
       ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/invoices/search_controller.rb": [
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/invoices/search_controller.rb": [
         1,
         1,
         0,
@@ -145,14 +103,14 @@
         null,
         null
       ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/invoices/random_controller.rb": [
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/invoices/random_controller.rb": [
         1,
         1,
         1,
         null,
         null
       ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/items_controller.rb": [
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/items_controller.rb": [
         1,
         1,
         1,
@@ -163,14 +121,14 @@
         null,
         null
       ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/items/random_controller.rb": [
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/items/random_controller.rb": [
         1,
         1,
         1,
         null,
         null
       ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/items/search_controller.rb": [
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/items/search_controller.rb": [
         1,
         1,
         1,
@@ -187,7 +145,7 @@
         null,
         null
       ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/merchants_controller.rb": [
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/merchants_controller.rb": [
         1,
         1,
         1,
@@ -198,7 +156,7 @@
         null,
         null
       ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/merchants/search_controller.rb": [
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/merchants/search_controller.rb": [
         1,
         null,
         1,
@@ -216,7 +174,7 @@
         null,
         null
       ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/merchants/random_controller.rb": [
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/merchants/random_controller.rb": [
         1,
         null,
         1,
@@ -224,7 +182,7 @@
         null,
         null
       ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/transactions_controller.rb": [
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/transactions_controller.rb": [
         1,
         null,
         1,
@@ -236,7 +194,7 @@
         null,
         null
       ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/transactions/search_controller.rb": [
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/transactions/search_controller.rb": [
         1,
         null,
         1,
@@ -254,7 +212,7 @@
         null,
         null
       ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/transactions/random_controller.rb": [
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/transactions/random_controller.rb": [
         1,
         null,
         1,
@@ -262,29 +220,28 @@
         null,
         null
       ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/channels/application_cable/channel.rb": [
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/channels/application_cable/channel.rb": [
         0,
         0,
         0,
         0
       ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/channels/application_cable/connection.rb": [
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/channels/application_cable/connection.rb": [
         0,
         0,
         0,
         0
       ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/jobs/application_job.rb": [
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/jobs/application_job.rb": [
         0,
         0
       ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/mailers/application_mailer.rb": [
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/mailers/application_mailer.rb": [
         0,
         0,
         0,
         0
       ]
     },
-    "timestamp": 1489511433
   }
 }
