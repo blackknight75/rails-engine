@@ -16,7 +16,7 @@ describe "invoices", type: :request do
     expect(invoices.first).to have_key(:customer_id)
   end
 
-  it "returns a single invoice" do
+  it "returns single invoice" do
     invoice = create(:invoice)
 
     get "/api/v1/invoices/#{invoice.id}"
@@ -29,5 +29,33 @@ describe "invoices", type: :request do
     expect(invoice_attrs).to have_key(:status)
     expect(invoice_attrs).to have_key(:merchant_id)
     expect(invoice_attrs).to have_key(:customer_id)
+  end
+
+  it "returns all invoices based on status lookup" do
+    create_list(:invoice, 2)
+    create(:invoice, status: "pending")
+
+    get "/api/v1/invoices/find?status=shipped"
+
+    expect(response).to be_success
+
+    invoices = JSON.parse(response.body)
+
+    expect(invoices.count).to eq 2
+    expect(invoices.first).to have_value("shipped")
+  end
+
+  it "returns single invoice based on merchant_id lookup" do
+    create_list(:invoice, 2)
+    create(:invoice, merchant_id: 3)
+
+    get "/api/v1/invoices/find?merchant_id=3"
+
+    expect(response).to be_success
+
+    invoices = JSON.parse(response.body)
+
+    expect(invoices.count).to eq 1
+    expect(invoices.first).to have_value("shipped")
   end
 end
