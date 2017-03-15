@@ -47,9 +47,10 @@ describe "invoices", type: :request do
 
   it "returns single invoice based on merchant_id lookup" do
     create_list(:invoice, 2)
-    create(:invoice, merchant_id: 3)
+    merchant = create(:merchant)
+    create(:invoice, merchant_id: merchant.id)
 
-    get "/api/v1/invoices/find?merchant_id=3"
+    get "/api/v1/invoices/find?merchant_id=#{merchant.id}"
 
     expect(response).to be_success
 
