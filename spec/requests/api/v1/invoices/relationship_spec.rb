@@ -37,7 +37,7 @@ RSpec.describe 'Invoice Relationships', type: :request do
 
     items = JSON.parse(response.body, symbolize_names: true)
 
-    expect(items.count).to eq 1
+    expect(items.count).to eq 10
   end
 
   it 'returns the associated customer' do
