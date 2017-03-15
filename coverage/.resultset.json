@@ -150,6 +150,34 @@
         null,
         null
       ],
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/invoice_items/invoice_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/serializers/invoice_serializer.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/invoice_items/item_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/serializers/item_serializer.rb": [
+        1,
+        1,
+        null,
+        1,
+        19,
+        null,
+        null
+      ],
       "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/invoice_items_controller.rb": [
         1,
         1,
@@ -166,7 +194,7 @@
         1,
         null,
         1,
-        9,
+        23,
         null,
         null
       ],
@@ -194,6 +222,51 @@
         null,
         null
       ],
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/invoices/transactions_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/serializers/transaction_serializer.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/invoices/invoice_items_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/invoices/items_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/invoices/customer_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/invoices/merchant_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/serializers/merchant_serializer.rb": [
+        1,
+        1,
+        null
+      ],
       "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/invoices_controller.rb": [
         1,
         1,
@@ -203,11 +276,6 @@
         1,
         1,
         null,
-        null
-      ],
-      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/serializers/invoice_serializer.rb": [
-        1,
-        1,
         null
       ],
       "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/invoices/search_controller.rb": [
@@ -234,6 +302,20 @@
         null,
         null
       ],
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/items/invoice_items_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/items/merchant_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/items_controller.rb": [
         1,
         1,
@@ -242,15 +324,6 @@
         null,
         1,
         1,
-        null,
-        null
-      ],
-      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/serializers/item_serializer.rb": [
-        1,
-        1,
-        null,
-        1,
-        8,
         null,
         null
       ],
@@ -289,11 +362,6 @@
         null,
         null
       ],
-      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/serializers/merchant_serializer.rb": [
-        1,
-        1,
-        null
-      ],
       "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/merchants/search_controller.rb": [
         1,
         null,
@@ -328,11 +396,6 @@
         1,
         1,
         null,
-        null
-      ],
-      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/serializers/transaction_serializer.rb": [
-        1,
-        1,
         null
       ],
       "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/transactions/search_controller.rb": [
@@ -382,6 +445,6 @@
         0
       ]
     },
-    "timestamp": 1489541599
+    "timestamp": 1489596710
   }
 }
