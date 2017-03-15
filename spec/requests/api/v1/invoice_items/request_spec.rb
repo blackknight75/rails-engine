@@ -60,15 +60,16 @@ describe "invoice_items" do
 
   it "returns a single invoice_item based on criteria" do
     iis = create_list(:invoice_item, 2)
-    ii  = create(:invoice_item, item_id: 131)
+    item = create(:item)
+    ii  = create(:invoice_item, item_id: item.id)
 
-    get '/api/v1/invoice_items/find?item_id=131'
+    get "/api/v1/invoice_items/find?item_id=#{item.id}"
 
     expect(response).to be_success
 
     ii_match = JSON.parse(response.body, symbolize_names: true)
 
     expect(ii_match.count).to eq 5
-    expect(ii_match).to have_value(131)
+    expect(ii_match).to have_value(item.id)
   end
 end
