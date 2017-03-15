@@ -70,6 +70,6 @@ require 'rails_helper'
       expect(response).to be_success
       expect(merchant["id"]).to be_a(Integer)
       expect(merchant["name"]).to be_a(String)
-
     end
+    
   end

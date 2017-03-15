@@ -4,22 +4,24 @@
       "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/models/invoice_item.rb": [
         1,
         1,
-        null,
         1,
+        1,
+        null,
         1,
         0,
         0,
+        0,
         null,
-        1,
+        0,
         null,
         null,
         null,
-        1,
         1,
         0,
         0,
+        0,
         null,
-        1,
+        0,
         null,
         null,
         null
@@ -29,32 +31,37 @@
         1,
         null,
         1,
-        6,
+        0,
         null,
         null
       ],
       "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/models/invoice.rb": [
         1,
         1,
+        null,
+        null,
         null
       ],
       "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/models/item.rb": [
         1,
         1,
         null,
-        1,
+        null,
+        null,
+        null,
         1,
         0,
         0,
+        0,
+        null,
+        0,
+        null,
+        null,
         null,
         1,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
+        0,
+        0,
+        0,
         null,
         0,
         null,
@@ -64,271 +71,24 @@
       "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/models/merchant.rb": [
         1,
         1,
+        null,
+        null,
+        null,
         null
       ],
       "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/models/customer.rb": [
         1,
         1,
+        null,
+        null,
+        null,
         null
       ],
       "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/models/transaction.rb": [
         1,
         null,
-        null
-      ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/customers_controller.rb": [
-        1,
         null,
-        1,
-        1,
         null,
-        null,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/application_controller.rb": [
-        1,
-        null
-      ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/serializers/customer_serializer.rb": [
-        1,
-        1,
-        null
-      ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/customers/search_controller.rb": [
-        1,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        null,
-        1,
-        2,
-        null,
-        null
-      ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/customers/random_controller.rb": [
-        1,
-        null,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/invoice_items_controller.rb": [
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/serializers/invoice_item_serializer.rb": [
-        1,
-        1,
-        null,
-        1,
-        9,
-        null,
-        null
-      ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/invoice_items/random_controller.rb": [
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/invoice_items/search_controller.rb": [
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        null,
-        1,
-        2,
-        null,
-        null
-      ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/invoices_controller.rb": [
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/serializers/invoice_serializer.rb": [
-        1,
-        1,
-        null
-      ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/invoices/search_controller.rb": [
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        null,
-        1,
-        2,
-        null,
-        null
-      ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/invoices/random_controller.rb": [
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/items_controller.rb": [
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/serializers/item_serializer.rb": [
-        1,
-        1,
-        null,
-        1,
-        8,
-        null,
-        null
-      ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/items/random_controller.rb": [
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/items/search_controller.rb": [
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        null,
-        1,
-        2,
-        null,
-        null
-      ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/merchants_controller.rb": [
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/serializers/merchant_serializer.rb": [
-        1,
-        1,
-        null
-      ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/merchants/search_controller.rb": [
-        1,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        2,
-        null,
-        null,
-        1,
-        null,
-        1,
-        3,
-        null,
-        null
-      ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/merchants/random_controller.rb": [
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/transactions_controller.rb": [
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/serializers/transaction_serializer.rb": [
-        1,
-        1,
-        null
-      ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/transactions/search_controller.rb": [
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        null,
-        1,
-        2,
-        null,
-        null
-      ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/transactions/random_controller.rb": [
-        1,
-        1,
-        1,
         null,
         null
       ],
@@ -344,6 +104,224 @@
         0,
         0
       ],
+      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/customers/random_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/customers/search_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/customers_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/invoice_items/random_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/invoice_items/search_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/invoice_items_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/invoices/random_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/invoices/search_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/invoices_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/items/random_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/items/search_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/items_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/merchants/random_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/merchants/search_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/merchants_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/transactions/random_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/transactions/search_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/transactions_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/application_controller.rb": [
+        0,
+        0
+      ],
       "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/jobs/application_job.rb": [
         0,
         0
@@ -353,8 +331,46 @@
         0,
         0,
         0
+      ],
+      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/serializers/customer_serializer.rb": [
+        0,
+        0,
+        0
+      ],
+      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/serializers/invoice_item_serializer.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/serializers/invoice_serializer.rb": [
+        0,
+        0,
+        0
+      ],
+      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/serializers/item_serializer.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/serializers/merchant_serializer.rb": [
+        0,
+        0,
+        0
+      ],
+      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/serializers/transaction_serializer.rb": [
+        0,
+        0,
+        0
       ]
     },
-    "timestamp": 1489526877
+    "timestamp": 1489538746
   }
 }
