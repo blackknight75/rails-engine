@@ -1,24 +1,13 @@
-# README
+## Setup
+# Rails Engine
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1. `git clone` this repo:
+`git@github.com:cews7/rails_engine_solo_edition.git`
 
-Things you may want to cover:
+2. Run `bundle`  
 
-* Ruby version
+3. Run `rake db:setup`
 
-* System dependencies
+4. Run `rspec`, all tests passing
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+5. Start up a `rails server` and use localhost to navigate to various endpoints from the browser
