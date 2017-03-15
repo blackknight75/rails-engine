@@ -1,5 +1,7 @@
 class InvoiceItem < ApplicationRecord
-  validates :unit_price, :invoice_id, :item_id, :quantity, presence: true
+  validates :unit_price, :quantity, presence: true
+  belongs_to :item
+  belongs_to :invoice
 
   def self.search(params)
     if params.include? "unit_price"
