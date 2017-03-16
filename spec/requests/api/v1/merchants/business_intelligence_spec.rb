@@ -146,4 +146,27 @@ describe 'Merchant Business Intelligence' do
 
     expect(response.body).to eq '{"total_revenue":"0.4"}'
   end
+
+  it "returns customers with pending invoices" do
+    merchant1 = create(:merchant)
+    customer1 = create(:customer)
+    customer2 = create(:customer)
+    customer3 = create(:customer)
+    invoice1 = create(:invoice, customer_id: customer2.id, merchant_id: merchant1.id)
+    invoice2 = create(:invoice, customer_id: customer1.id, merchant_id: merchant1.id)
+    invoice3 = create(:invoice, customer_id: customer3.id, merchant_id: merchant1.id)
+    invoice1.transactions << create_list(:transaction, 2, result: 'failed')
+    invoice2.transactions << create_list(:transaction, 2, result: 'success')
+    invoice3.transactions << create_list(:transaction, 2, result: 'failed')
+
+    get "/api/v1/merchants/#{merchant1.id}/customers_with_pending_invoices"
+
+    expect(response).to be_success
+
+    customers = JSON.parse(response.body, symbolize_names: true)
+
+    expect(customers.count).to eq 2
+    expect(customers.first[:first_name]).to be_a String
+    expect(customers.last[:first_name]).to be_a String
+  end
 end

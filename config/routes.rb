@@ -36,16 +36,17 @@ Rails.application.routes.draw do
       resources :invoice_items, only: [:index, :show]
 
       namespace :merchants do
-        get '/find',                  to: 'search#show'
-        get '/find_all',              to: 'search#index'
-        get '/random',                to: 'random#show'
-        get '/:id/items',             to: 'items#index'
-        get '/most_revenue',          to: 'most_revenue#index'
-        get '/revenue',               to: 'revenue_by_date#index'
-        get '/:id/invoices',          to: 'invoices#index'
-        get '/:id/favorite_customer', to: 'favorite_customer#show'
-        get '/most_items',            to: 'most_items#index'
-        get '/:id/revenue',           to: 'revenue#show'
+        get '/find',                                to: 'search#show'
+        get '/find_all',                            to: 'search#index'
+        get '/random',                              to: 'random#show'
+        get '/:id/items',                           to: 'items#index'
+        get '/most_revenue',                        to: 'most_revenue#index'
+        get '/revenue',                             to: 'revenue_by_date#index'
+        get '/:id/invoices',                        to: 'invoices#index'
+        get '/:id/favorite_customer',               to: 'favorite_customer#show'
+        get '/most_items',                          to: 'most_items#index'
+        get '/:id/revenue',                         to: 'revenue#show'
+        get '/:id/customers_with_pending_invoices', to: 'pending_invoices#index'
       end
       resources :merchants, only: [:index, :show]
 
