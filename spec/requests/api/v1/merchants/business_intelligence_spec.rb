@@ -73,7 +73,7 @@ describe 'Merchant Business Intelligence' do
     expect(response).to be_success
     expect(response.body).to eq '{"revenue":"0.2"}'
   end
-  
+
   it 'returns favorite customer by number of interactions' do
     merchant = create(:merchant)
     (customer1, customer2) = create_list(:customer, 2)
@@ -115,5 +115,35 @@ describe 'Merchant Business Intelligence' do
 
     expect(top_merchants.count).to eq 2
     expect(top_merchants.first[:name]).to eq merchant2.name
+  end
+
+  it "returns revenue for all merchants for a specific date" do
+    merchant_1 = create(:merchant)
+
+    merchant_1.invoices << create_list(:invoice, 2)
+
+    merchant_1.invoices.each do |invoice|
+      invoice.transactions  << create(:transaction)
+      invoice.invoice_items << create(:invoice_item, quantity: 1, unit_price: 5)
+      invoice.invoice_items << create(:invoice_item, quantity: 1, unit_price: 5)
+    end
+
+    merchant_2 = create(:merchant)
+
+    merchant_2.invoices << create_list(:invoice, 2, created_at: merchant_1.created_at)
+
+    merchant_2.invoices.each do |invoice|
+      invoice.transactions  << create(:transaction)
+      invoice.invoice_items << create(:invoice_item, quantity: 1, unit_price: 5)
+      invoice.invoice_items << create(:invoice_item, quantity: 1, unit_price: 5)
+    end
+
+    get "/api/v1/merchants/revenue?date=#{merchant_1.invoices.first.created_at}"
+
+    expect(response).to be_success
+
+    merchants = JSON.parse(response.body, symbolize_names: true)
+
+    expect(response.body).to eq '{"total_revenue":"0.4"}'
   end
 end
