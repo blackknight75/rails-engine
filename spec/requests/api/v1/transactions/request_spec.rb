@@ -45,7 +45,7 @@ describe 'Transactions', type: :request do
     expect(response).to be_success
     parsed_transactions = JSON.parse(response.body,  symbolize_names: true)
 
-    expect(parsed_transactions.count).to eq 2
+    expect(parsed_transactions.count).to eq 1
     expect(parsed_transactions.first[:credit_card_number]).to be_a String
   end
 

@@ -3,7 +3,7 @@ require 'rails_helper'
 describe 'Items Business Intelligence' do
   it "returns top ranked items by revenue" do
     setup
-    
+
     get "/api/v1/items/most_revenue?quantity=2"
 
     expect(response).to be_success
@@ -25,7 +25,7 @@ def setup
   @invoice_item1 = create(:invoice_item, item_id: @item1.id, invoice_id: @invoice1.id)
   @invoice_item2 = create(:invoice_item, item_id: @item2.id, invoice_id: @invoice1.id, quantity: 100)
   @invoice_item3 = create(:invoice_item, item_id: @item3.id, invoice_id: @invoice1.id, quantity: 2)
-  @invoice_item4 = create(:invoice_item, item_id: @item4.id, invoice_id: @invoice1.id, quantity: 5)
+  @invoice_item4 = create(:invoice_item, item_id: @item4.id, invoice_id: @invoice2.id, quantity: 5)
   @transaction1 = create(:transaction, invoice_id: @invoice1.id)
   @transaction2 = create(:transaction, invoice_id: @invoice2.id)
 end

@@ -24,7 +24,6 @@ class Item < ApplicationRecord
   end
 
   def self.most_revenue(quantity)
-    # binding.pry
     joins(invoices: [:invoice_items, :transactions])
     .merge(Transaction.successful)
     .group(:id)

@@ -46,7 +46,7 @@ describe "Customers", type: :request do
     customers = JSON.parse(response.body, symbolize_names: true)
 
     expect(response).to be_success
-    expect(customers.count).to eq 3
+    expect(customers.count).to eq 1
     expect(customers.first[:first_name]).to be_a String
     expect(customers.last[:last_name]).to be_a String
   end
