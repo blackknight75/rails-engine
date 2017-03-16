@@ -27,7 +27,7 @@ describe 'Transactions', type: :request do
     expect(transaction).to have_key("credit_card_number")
   end
 
-  it 'finds a single transaction by attribute' do
+  it 'finds a single transaction -- cc lookup' do
     transactions = create_list(:transaction, 2)
 
     get "/api/v1/transactions/find?credit_card_number=#{transactions.first.credit_card_number}"
@@ -36,6 +36,35 @@ describe 'Transactions', type: :request do
     transaction = JSON.parse(response.body,  symbolize_names: true)
     expect(transaction[:credit_card_number]).to eq(transactions.first["credit_card_number"])
   end
+
+  it 'returns transaction -- created_at lookup' do
+    db_transaction = create(:transaction)
+
+    get "/api/v1/transactions/find?created_at=#{db_transaction.created_at}"
+
+    expect(response).to be_success
+
+    transaction = JSON.parse(response.body, symbolize_names: true)
+
+    expect(transaction.count).to eq 4
+    expect(transaction).to have_key(:invoice_id)
+    expect(transaction).to have_key(:credit_card_number)
+  end
+
+  it 'returns transaction -- updated_at lookup' do
+    db_transaction = create(:transaction)
+
+    get "/api/v1/transactions/find?updated_at=#{db_transaction.updated_at}"
+
+    expect(response).to be_success
+
+    transaction = JSON.parse(response.body, symbolize_names: true)
+
+    expect(transaction.count).to eq 4
+    expect(transaction).to have_key(:invoice_id)
+    expect(transaction).to have_key(:credit_card_number)
+  end
+
 
   it 'finds all transactions by attribute' do
     transactions = create_list(:transaction, 2)

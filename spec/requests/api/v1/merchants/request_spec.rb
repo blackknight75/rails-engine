@@ -37,6 +37,32 @@ require 'rails_helper'
       expect(merchant_attrs["id"]).to eq(Merchant.last.id)
     end
 
+    it 'returns merchant -- created_at lookup' do
+    db_merchant = create(:merchant)
+
+    get "/api/v1/merchants/find?created_at=#{db_merchant.created_at}"
+
+    expect(response).to be_success
+
+    merchant_attrs = JSON.parse(response.body)
+
+    expect(merchant_attrs.count).to eq 2
+    expect(Merchant.count).to eq 1
+  end
+
+  it 'returns merchant -- updated_at lookup' do
+    db_merchant = create(:merchant)
+
+    get "/api/v1/merchants/find?updated_at=#{db_merchant.created_at}"
+
+    expect(response).to be_success
+
+    merchant_attrs = JSON.parse(response.body)
+
+    expect(merchant_attrs.count).to eq 2
+    expect(Merchant.count).to eq 1
+  end
+
     it 'find merchant by name' do
       merchants = create_list(:merchant, 2)
 
@@ -71,5 +97,5 @@ require 'rails_helper'
       expect(merchant["id"]).to be_a(Integer)
       expect(merchant["name"]).to be_a(String)
     end
-    
+
   end
