@@ -58,7 +58,7 @@ describe "invoice_items" do
     expect(iis_match.first).to have_key(:quantity)
   end
 
-  it "returns a single invoice_item based on criteria" do
+  it "returns a single invoice_item based on item id " do
     iis = create_list(:invoice_item, 2)
     item = create(:item)
     ii  = create(:invoice_item, item_id: item.id)
