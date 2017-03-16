@@ -3,6 +3,7 @@ class Item < ApplicationRecord
   belongs_to :merchant
   has_many :invoice_items
   has_many :invoices, through: :invoice_items
+  has_many :transactions, through: :invoices
 
   def self.search(params)
     if params.include? "unit_price"
@@ -37,5 +38,11 @@ class Item < ApplicationRecord
     .group(:id)
     .order("count(invoice_items) DESC")
     .take(quantity)
+
+  def self.most_revenue(quantity)
+    joins(invoices: [:invoice_items, :transactions])
+    .merge(Transaction.successful)
+    .group(:id)
+    .order("sum(invoice_items.quantity) DESC").limit(quantity)
   end
 end
