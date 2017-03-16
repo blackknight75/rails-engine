@@ -38,7 +38,8 @@ class Item < ApplicationRecord
     .group(:id)
     .order("count(invoice_items) DESC")
     .take(quantity)
-
+  end
+  
   def self.most_revenue(quantity)
     joins(invoices: [:invoice_items, :transactions])
     .merge(Transaction.successful)

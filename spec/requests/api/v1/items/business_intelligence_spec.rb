@@ -38,7 +38,6 @@ RSpec.describe 'Items Business Intelligence' do
     expect(best_day).to have_value(best_day[:best_day])
   end
 
-describe 'Items Business Intelligence' do
   it "returns top ranked items by revenue" do
     setup
 
