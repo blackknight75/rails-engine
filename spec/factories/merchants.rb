@@ -1,5 +1,5 @@
-FactoryGirl.define do 
+FactoryGirl.define do
   factory :merchant do
-    name Faker::LordOfTheRings.character
+    name { Faker::LordOfTheRings.character }
   end
 end
