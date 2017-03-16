@@ -19,4 +19,19 @@ class Merchant < ApplicationRecord
     .order('sum(invoice_items.quantity) desc')
     .limit(quantity)
   end
+
+  def self.revenue(date = nil)
+    return revenue_by_date(date) if date
+    invoices 
+    .joins(invoices: [:invoice_items, :transactions])
+    .merge(Transaction.successful)
+    .sum('invoice_items.quantity * invoice_items.unit_price')
+  end
+
+  def self.revenue_by_date(date)
+    joins(invoices: [:invoice_items, :transactions])
+    .merge(Transaction.successful)
+    .where(invoices: {created_at: date})
+    .sum('invoice_items.quantity * invoice_items.unit_price')
+  end
 end
