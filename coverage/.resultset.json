@@ -14,7 +14,7 @@
         null,
         null,
         null,
-        1,
+        0,
         null,
         null
       ],
@@ -78,7 +78,7 @@
         1,
         null,
         null,
-        0,
+        1,
         null,
         null,
         1,
@@ -86,22 +86,22 @@
         null,
         null,
         null,
-        0,
+        1,
         null,
         null,
         1,
-        0,
+        2,
         null,
-        null,
-        null,
-        0,
         null,
         null,
         1,
         null,
         null,
+        1,
         null,
-        0,
+        null,
+        null,
+        1,
         null,
         null
       ],
@@ -129,6 +129,23 @@
         0,
         null,
         null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        0,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        0,
+        null,
         null
       ],
       "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/models/transaction.rb": [
@@ -137,11 +154,12 @@
         null,
         1,
         1,
-        2,
+        4,
         null
       ],
-      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/customers/favorite_merchant_controller.rb": [
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/merchants/favorite_customer_controller.rb": [
         1,
+        null,
         1,
         1,
         null,
@@ -151,9 +169,37 @@
         1,
         null
       ],
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/serializers/customer_serializer.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/merchants/most_items_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/serializers/merchant_serializer.rb": [
         1,
         1,
+        null
+      ],
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/merchants/revenue_controller.rb": [
+        1,
+        1,
+        2,
+        null,
+        null
+      ],
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/serializers/revenue_serializer.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/channels/application_cable/channel.rb": [
@@ -163,6 +209,13 @@
         0
       ],
       "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/channels/application_cable/connection.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/customers/favorite_merchant_controller.rb": [
+        0,
         0,
         0,
         0,
@@ -341,6 +394,13 @@
         0,
         0
       ],
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/items/best_day_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
       "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/items/invoice_items_controller.rb": [
         0,
         0,
@@ -349,6 +409,13 @@
         0
       ],
       "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/items/merchant_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/items/most_items_controller.rb": [
         0,
         0,
         0,
@@ -390,14 +457,6 @@
         0,
         0
       ],
-      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/merchants/favorite_customer_controller.rb": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
       "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/merchants/invoices_controller.rb": [
         0,
         0,
@@ -414,21 +473,7 @@
         0,
         0
       ],
-      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/merchants/most_items_controller.rb": [
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
       "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/merchants/random_controller.rb": [
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/controllers/api/v1/merchants/revenue_controller.rb": [
         0,
         0,
         0,
@@ -517,7 +562,11 @@
         0,
         0
       ],
-      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/serializers/customer_serializer.rb": [
+      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/serializers/best_day_serializer.rb": [
+        0,
+        0,
+        0,
+        0,
         0,
         0,
         0
@@ -545,21 +594,12 @@
         0,
         0
       ],
-      "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/serializers/revenue_serializer.rb": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
       "/Users/cews7/turing/m3/mod-three-work/projects/rails-engine/app/serializers/transaction_serializer.rb": [
         0,
         0,
         0
       ]
     },
-    "timestamp": 1489685449
+    "timestamp": 1489692394
   }
 }

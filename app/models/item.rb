@@ -21,4 +21,21 @@ class Item < ApplicationRecord
       where(params)
     end
   end
+
+  def best_day
+    invoices.joins(:invoice_items)
+    .group(:id)
+    .order("sum(invoice_items.quantity) DESC, invoices.created_at DESC")
+    .first
+    .created_at
+  end
+
+  def self.most_items_sold(quantity)
+    select("items.*")
+    .joins(invoices: [:transactions, :invoice_items])
+    .merge(Transaction.successful)
+    .group(:id)
+    .order("count(invoice_items) DESC")
+    .take(quantity)
+  end
 end

@@ -22,7 +22,7 @@ class Merchant < ApplicationRecord
 
   def self.revenue(date = nil)
     return revenue_by_date(date) if date
-    invoices 
+    invoices
     .joins(invoices: [:invoice_items, :transactions])
     .merge(Transaction.successful)
     .sum('invoice_items.quantity * invoice_items.unit_price')
