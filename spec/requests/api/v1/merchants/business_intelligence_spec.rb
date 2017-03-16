@@ -144,6 +144,6 @@ describe 'Merchant Business Intelligence' do
 
     merchants = JSON.parse(response.body, symbolize_names: true)
 
-    expect(response.body).to eq '{"revenue":"0.2"}'
+    expect(response.body).to eq '{"total_revenue":"0.4"}'
   end
 end
