@@ -70,7 +70,7 @@
         1,
         null,
         null,
-        1,
+        0,
         null,
         null
       ],
@@ -80,6 +80,7 @@
         1,
         1,
         1,
+        1,
         null,
         1,
         0,
@@ -97,6 +98,14 @@
         null,
         0,
         null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
         null,
         null
       ],
@@ -109,7 +118,7 @@
         2,
         null
       ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/merchants/favorite_customer_controller.rb": [
+      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/items/most_revenue_controller.rb": [
         1,
         null,
         1,
@@ -121,9 +130,13 @@
         1,
         null
       ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/serializers/customer_serializer.rb": [
+      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/serializers/item_serializer.rb": [
         1,
         1,
+        null,
+        1,
+        2,
+        null,
         null
       ],
       "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/channels/application_cable/channel.rb": [
@@ -360,6 +373,14 @@
         0,
         0
       ],
+      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/merchants/favorite_customer_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
       "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/merchants/invoices_controller.rb": [
         0,
         0,
@@ -399,6 +420,9 @@
         0,
         0,
         0,
+        0
+      ],
+      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/merchants/total_revenue_controller.rb": [
         0
       ],
       "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/merchants_controller.rb": [
@@ -465,6 +489,11 @@
         0,
         0
       ],
+      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/serializers/customer_serializer.rb": [
+        0,
+        0,
+        0
+      ],
       "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/serializers/invoice_item_serializer.rb": [
         0,
         0,
@@ -475,15 +504,6 @@
         0
       ],
       "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/serializers/invoice_serializer.rb": [
-        0,
-        0,
-        0
-      ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/serializers/item_serializer.rb": [
-        0,
-        0,
-        0,
-        0,
         0,
         0,
         0
@@ -499,6 +519,6 @@
         0
       ]
     },
-    "timestamp": 1489618223
+    "timestamp": 1489684616
   }
 }
