@@ -84,4 +84,17 @@ describe "invoice_items" do
     expect(ii_match.count).to eq 5
     expect(ii_match).to have_value(item.id)
   end
+
+  it 'can search all invoice_items by quantity' do
+    invoice_items = create_list(:invoice_item, 3, quantity: 5)
+
+    expect(InvoiceItem.search_all(quantity: 5).count).to eq 3
+  end
+
+  it 'can search for single merchant item by quantity' do
+    invoice_items = create_list(:invoice_item, 2, quantity: 3)
+    invoice_items = create(:invoice_item, quantity: 5)
+
+    expect(InvoiceItem.search(quantity: 5).quantity).to eq 5
+  end
 end

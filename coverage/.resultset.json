@@ -35,20 +35,20 @@
         1,
         null,
         1,
-        1,
+        2,
         0,
         0,
         null,
-        1,
+        2,
         null,
         null,
         null,
         1,
-        1,
+        2,
         0,
         0,
         null,
-        1,
+        2,
         null,
         null,
         null
@@ -674,9 +674,6 @@
         0,
         0
       ],
-      "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/controllers/api/v1/merchants/total_revenue_controller.rb": [
-        0
-      ],
       "/Users/blackknight_75/turing/1611/2module/projects/rails-engine/app/jobs/application_job.rb": [
         0,
         0
@@ -688,6 +685,6 @@
         0
       ]
     },
-    "timestamp": 1489721797
+    "timestamp": 1489728268
   }
 }
