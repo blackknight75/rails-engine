@@ -42,6 +42,22 @@ describe "Items", type: :request do
     expect(random_item).to have_key(:description)
   end
 
+  it 'returns nil when search item name not in database' do
+    items  = create_list(:item, 2, unit_price: 4)
+    item0  = create(:item, unit_price: 1)
+    item1  = create(:item, unit_price: 1)
+
+    get "/api/v1/items/find_all?name=khjsfdalkasdfj"
+
+    expect(response).to be_success
+
+    items = JSON.parse(response.body, symbolize_names: true)
+
+    expect(items.count).to eq 0
+    expect(response.body).to eq("[]")
+    expect(items).to eq([])
+  end
+
   it "returns all items based on unit_price" do
     items  = create_list(:item, 2, unit_price: 4)
     item0  = create(:item, unit_price: 1)

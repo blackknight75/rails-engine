@@ -15,6 +15,18 @@ describe "invoice_items" do
     expect(invoice_items.first).to have_key(:quantity)
   end
 
+  it "try to return all invoice_items with nothing in database" do
+
+    get '/api/v1/invoice_items'
+
+    expect(response).to be_success
+
+    invoice_items = JSON.parse(response.body, symbolize_names: true)
+
+    expect(invoice_items.first).to eq(nil)
+    expect(response.body).to eq("[]")
+  end
+
   it "returns a single invoice_item" do
     iis = create_list(:invoice_item, 2)
 
