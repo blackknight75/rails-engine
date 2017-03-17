@@ -15,6 +15,18 @@ describe "invoice_items" do
     expect(invoice_items.first).to have_key(:quantity)
   end
 
+  it "try to return all invoice_items with nothing in database" do
+
+    get '/api/v1/invoice_items'
+
+    expect(response).to be_success
+
+    invoice_items = JSON.parse(response.body, symbolize_names: true)
+
+    expect(invoice_items.first).to eq(nil)
+    expect(response.body).to eq("[]")
+  end
+
   it "returns a single invoice_item" do
     iis = create_list(:invoice_item, 2)
 
@@ -71,5 +83,18 @@ describe "invoice_items" do
 
     expect(ii_match.count).to eq 5
     expect(ii_match).to have_value(item.id)
+  end
+
+  it 'can search all invoice_items by quantity' do
+    invoice_items = create_list(:invoice_item, 3, quantity: 5)
+
+    expect(InvoiceItem.search_all(quantity: 5).count).to eq 3
+  end
+
+  it 'can search for single merchant item by quantity' do
+    invoice_items = create_list(:invoice_item, 2, quantity: 3)
+    invoice_items = create(:invoice_item, quantity: 5)
+
+    expect(InvoiceItem.search(quantity: 5).quantity).to eq 5
   end
 end

@@ -67,12 +67,13 @@ describe 'Transactions', type: :request do
 
 
   it 'finds all transactions by attribute' do
-    transactions = create_list(:transaction, 2)
+    transaction1 = create(:transaction)
+    transaction2 = create(:transaction, credit_card_number: 5555-2121-5555-1211)
 
-    get "/api/v1/transactions/find_all?credit_card_number=#{transactions.first.credit_card_number}"
+    get "/api/v1/transactions/find_all?credit_card_number=#{transaction1.credit_card_number}"
 
     expect(response).to be_success
-    parsed_transactions = JSON.parse(response.body,  symbolize_names: true)
+    parsed_transactions = JSON.parse(response.body, symbolize_names: true)
 
     expect(parsed_transactions.count).to eq 1
     expect(parsed_transactions.first[:credit_card_number]).to be_a String
