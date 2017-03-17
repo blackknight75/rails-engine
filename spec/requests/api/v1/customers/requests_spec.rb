@@ -26,10 +26,22 @@ describe "Customers", type: :request do
     expect(customer[:last_name]).to be_a String
   end
 
-  it 'finds a single customer by attribute' do
+  it 'finds a single customer by first_name' do
     create_list(:customer, 2)
 
     get "/api/v1/customers/find?first_name=#{Customer.last.first_name}"
+
+    customer = JSON.parse(response.body, symbolize_names: true)
+
+    expect(response).to be_success
+    expect(customer[:first_name]).to be_a String
+    expect(customer[:last_name]).to be_a String
+  end
+
+  it 'finds a single customer by last_name' do
+    create_list(:customer, 2)
+
+    get "/api/v1/customers/find?last_name=#{Customer.last.last_name}"
 
     customer = JSON.parse(response.body, symbolize_names: true)
 
